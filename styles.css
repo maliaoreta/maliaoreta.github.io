@@ -1,0 +1,131 @@
+/* BASIC STYLE FOR EASIER VIEW */
+.project {
+  padding: 2em 0;
+  border-top: 1px solid gray;
+}
+
+.project-description {
+  width: 30%;
+}
+
+.project-description, .screenshot {
+  display: inline-block;
+}
+
+.screenshot {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 25em;
+  height: 15em;
+}
+
+span {
+  font-style: italic;
+}
+
+
+/********* SCREENSHOTS **********/
+
+/* Beyond VT Marketing */
+.bvt-desktop {
+  background-image: url('./screenshots/bvt-desktop.png');
+}
+
+.bvt-mobile {
+  background-image: url('./screenshots/bvt-mobile.png');
+}
+
+
+/* NeuEvents */
+.neuevents-desktop {
+  background-image: url('./screenshots/neuevents-desktop.png');
+}
+
+.neuevents-mobile {
+  /* background-image: url('./screenshots/neuevents-mobile.png'); */
+  background-image: url('./screenshots/neuevents-weddings.png');
+}
+
+
+/* Hew & Bordenave */
+.hb-desktop {
+  background-image: url('./screenshots/hb-desktop.png');
+}
+
+.hb-mobile {
+  background-image: url('./screenshots/hb-mobile.png');
+}
+
+
+/* Nathan Fujita */
+.nathanf-desktop {
+  background-image: url('./screenshots/nathanf-desktop.png');
+}
+
+.nathanf-mobile {
+  background-image: url('./screenshots/nathanf-mobile.png');
+}
+
+
+/* AirshipCMS Sign Up */
+.airship-desktop {
+  background-image: url('./screenshots/airship-desktop.jpg');
+}
+
+
+/* Truffaux */
+.truffaux-desktop {
+  background-image: url('./screenshots/truffaux-desktop.png');
+}
+
+.truffaux-mobile {
+  background-image: url('./screenshots/truffaux-mobile.png');
+}
+
+
+/* CircaVictor */
+.cv-desktop {
+  background-image: url('./screenshots/cv-desktop.png');
+}
+
+
+/* HellFire */
+.hellfire-desktop {
+  background-image: url('./screenshots/hellfire-desktop.png');
+}
+
+.hellfire-mobile {
+  background-image: url('./screenshots/hellfire-mobile.png');
+}
+
+
+/* E.V.E. */
+.eve-desktop {
+  background-image: url('./screenshots/eve-desktop.png');
+}
+
+.eve-mobile {
+  background-image: url('./screenshots/eve-mobile.png');
+}
+
+
+/* W.A.T.E.R.S. */
+.waters-desktop {
+  background-image: url('./screenshots/waters-desktop.png');
+}
+
+.waters-mobile {
+  background-image: url('./screenshots/waters-mobile.png');
+}
+
+
+/* Pixel Painter */
+.pixelpainter {
+  background-image: url('./screenshots/pixelpainter.png');
+}
+
+
+/* Kanbangular */
+.kanbangular {
+  background-image: url('./screenshots/kanbangular.png');
+}
