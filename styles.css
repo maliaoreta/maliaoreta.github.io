@@ -1,131 +1,447 @@
-/* BASIC STYLE FOR EASIER VIEW */
+/* RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CLEARFIX */
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+/* COLORS */
+
+/* medium blue */
+/* #51B7D6 */
+
+/* dark blue */
+/* #308AA6 */
+
+/* light grey */
+/* #CFCFCF */
+
+/* background grey */
+/* #FAFAFA */
+
+/* dark grey */
+/* #333 */
+
+body{
+  background-color: #FAFAFA;
+}
+
+a{
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+a:hover{
+  color: #51B7D6;
+  transition: all 0.2s ease;
+}
+
+
+/* LAYOUT */
+
+.contact-information,
+.projects-container{
+  padding: 20px;
+}
+
+@media only screen and (min-width: 640px){
+  .contact-information,
+  .projects-container{
+    padding: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .contact-information,
+  .projects-container{
+    max-width: 800px;
+    margin: auto;
+    padding: 50px;
+  }
+}
+
+/* CONTACT INFORMATION */
+
+.contact-information{
+  /*background-color: orange;*/
+  padding-bottom: 0;
+}
+
+/* PROJECT GRID */
+.projects-container{
+  padding-top: 0;
+}
+
 .project {
-  padding: 2em 0;
-  border-top: 1px solid gray;
+  border-top: 1px solid #CFCFCF;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 640px){
+  .project {
+    padding-top: 40px;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .project {
+    padding-top: 50px;
+    margin-top: 50px;
+  }
 }
 
 .project-description {
-  width: 30%;
+  box-sizing: border-box;
 }
 
-.project-description, .screenshot {
-  display: inline-block;
+@media only screen and (min-width: 640px){
+  .project-description {
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .project-description {
+    padding-right: 25px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .project-description {
+    width: 50%;
+    float: left;
+  }
+}
+
+.project-description ul{
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.project-description ul ul{
+  margin-bottom: 0;
+}
+
+.project-images{
+  /*background-color: pink;*/
+}
+
+@media only screen and (min-width: 768px){
+  .project-images {
+    width: 50%;
+    float: right;
+  }
+}
+
+.webmocha-project .project-images{
+  display: none;
+}
+
+@media only screen and (min-width: 768px){
+  .webmocha-project .project-images {
+    display: block;
+  }
 }
 
 .screenshot {
   background-size: contain;
   background-repeat: no-repeat;
-  width: 25em;
-  height: 15em;
+  background-position: center top;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
 }
 
-span {
-  font-style: italic;
+/* TYPOGRAPHY */
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  text-transform: uppercase;
+}
+
+h1{
+  font-size: 32px;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+}
+
+@media only screen and (min-width: 640px){
+  h1{
+    font-size: 38px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  h1{
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+}
+
+h2{
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  max-width: 70%;
+}
+
+@media only screen and (min-width: 640px){
+  h2{
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 15px;
+    max-width: none;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+}
+
+p, ul, li{
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+@media only screen and (min-width: 640px){
+  p, ul, li{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  p, ul, li{
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+p, ul{
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 640px){
+  p, ul{
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  p, ul{
+    margin-bottom: 25px;
+  }
+}
+
+p + ul{
+  margin-top: -10px;
+}
+
+@media only screen and (min-width: 640px){
+  p + ul{
+    margin-top: -20px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  p + ul{
+    margin-top: -25px;
+  }
+}
+
+p span {
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  /*margin-right: 5px;*/
+  letter-spacing: 1px;
+  font-size: .9em;
+}
+
+@media only screen and (min-width: 640px){
+  p, ul{
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  p, ul{
+    margin-bottom: 25px;
+  }
 }
 
 
 /********* SCREENSHOTS **********/
 
 /* Beyond VT Marketing */
-.bvt-desktop {
-  background-image: url('./screenshots/bvt-desktop.png');
+.bvt {
+  background-image: url('./screenshots/beyondvt.png');
+  height: 400px;
 }
-
-.bvt-mobile {
-  background-image: url('./screenshots/bvt-mobile.png');
-}
-
 
 /* NeuEvents */
-.neuevents-desktop {
-  background-image: url('./screenshots/neuevents-desktop.png');
+.neuevents {
+  background-image: url('./screenshots/ne.png');
+  height: 375px;
 }
-
-.neuevents-mobile {
-  /* background-image: url('./screenshots/neuevents-mobile.png'); */
-  background-image: url('./screenshots/neuevents-weddings.png');
-}
-
 
 /* Hew & Bordenave */
-.hb-desktop {
-  background-image: url('./screenshots/hb-desktop.png');
+.hb {
+  background-image: url('./screenshots/hb.png');
 }
-
-.hb-mobile {
-  background-image: url('./screenshots/hb-mobile.png');
-}
-
 
 /* Nathan Fujita */
-.nathanf-desktop {
-  background-image: url('./screenshots/nathanf-desktop.png');
+.nathan{
+  background-image: url('./screenshots/nathan.png');
 }
-
-.nathanf-mobile {
-  background-image: url('./screenshots/nathanf-mobile.png');
-}
-
 
 /* AirshipCMS Sign Up */
 .airship-desktop {
-  background-image: url('./screenshots/airship-desktop.jpg');
+  background-image: url('./screenshots/airshipsignup.png');
 }
-
 
 /* Truffaux */
-.truffaux-desktop {
-  background-image: url('./screenshots/truffaux-desktop.png');
+.truffaux {
+  background-image: url('./screenshots/truffaux.png');
 }
-
-.truffaux-mobile {
-  background-image: url('./screenshots/truffaux-mobile.png');
-}
-
 
 /* CircaVictor */
-.cv-desktop {
-  background-image: url('./screenshots/cv-desktop.png');
+.cv {
+  background-image: url('./screenshots/cv.png');
 }
 
-
-/* HellFire */
-.hellfire-desktop {
-  background-image: url('./screenshots/hellfire-desktop.png');
+/* Webmocha */
+.webmocha-placeholder {
+  display: none;
+  background-color: #EFEFEF;
+  font-family: 'Open Sans', sans-serif;
+  color: #AAA;
+  font-weight: 400;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center; font-size: 12px;
+  width: 100%;
+  height: 250px;
+  line-height: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  border: 1px dashed #CCC;
 }
 
-.hellfire-mobile {
-  background-image: url('./screenshots/hellfire-mobile.png');
+@media only screen and (min-width: 768px){
+  .webmocha-placeholder{
+    display: flex;
+  }
 }
-
 
 /* E.V.E. */
 .eve-desktop {
   background-image: url('./screenshots/eve-desktop.png');
 }
 
-.eve-mobile {
-  background-image: url('./screenshots/eve-mobile.png');
-}
+/* .eve-mobile { */
+/*   background-image: url('./screenshots/eve-mobile.png'); */
+/* } */
 
+/* PODS */
+.pods-before {
+  background-image: url('./screenshots/pods-before.png');
+  height: 300px;
+}
 
 /* W.A.T.E.R.S. */
 .waters-desktop {
   background-image: url('./screenshots/waters-desktop.png');
 }
 
-.waters-mobile {
-  background-image: url('./screenshots/waters-mobile.png');
-}
-
+/* .waters-mobile { */
+/*   background-image: url('./screenshots/waters-mobile.png'); */
+/* } */
 
 /* Pixel Painter */
 .pixelpainter {
   background-image: url('./screenshots/pixelpainter.png');
 }
 
-
 /* Kanbangular */
 .kanbangular {
   background-image: url('./screenshots/kanbangular.png');
 }
+
+/* PLACEHOLDER */
+/* .placeholder{ */
+/*   color: red; */
+/* } */
