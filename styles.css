@@ -81,7 +81,7 @@ table {
 /* #333 */
 
 body{
-  background-color: #FAFAFA;
+  background-color: #FDFDFD;
 }
 
 a{
@@ -346,7 +346,7 @@ p span {
 
 /* Beyond VT Marketing */
 .bvt {
-  background-image: url('./screenshots/beyondvt.png');
+  background-image: url('./screenshots/bvt.png');
   height: 400px;
 }
 
@@ -366,9 +366,19 @@ p span {
   background-image: url('./screenshots/nathan.png');
 }
 
-/* AirshipCMS Sign Up */
-.airship-desktop {
-  background-image: url('./screenshots/airshipsignup.png');
+/* GGJ Unicorns vs Dragons */
+.ggj {
+  background-image: url('./screenshots/ggj.png');
+}
+
+/* AirshipCMS */
+.airship {
+  background-image: url('./screenshots/airship.png');
+}
+
+/* AirshipCMS Skyport */
+.skyport {
+  background-image: url('./screenshots/skyport-homepage.png');
 }
 
 /* Truffaux */
@@ -378,7 +388,7 @@ p span {
 
 /* CircaVictor */
 .cv {
-  background-image: url('./screenshots/cv.png');
+  background-image: url('./screenshots/circavictor.png');
 }
 
 /* Webmocha */
